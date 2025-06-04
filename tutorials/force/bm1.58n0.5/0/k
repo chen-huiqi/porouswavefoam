@@ -1,0 +1,202 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      k;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -2 0 0 0 0];
+
+
+internalField   uniform 5e-10;
+
+boundaryField
+{
+    inlet
+    {
+        type            fixedValue;
+        value           uniform 5e-10;
+    }
+    outlet
+    {
+        type            fixedValue;
+        value           uniform 5e-10;
+    }
+    bottom
+    {
+        type            kqRWallFunction;
+        value           uniform 5e-10;
+    }
+    atmosphere
+    {
+        type            kqRWallFunction;
+        value           uniform 5e-10;
+    }
+    defaultFaces
+    {
+        type            empty;
+    }
+    force1
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force2
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force3
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force4
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force5
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force6
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force7
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force8
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force9
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force10
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force11
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force12
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force13
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force14
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force15
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force16
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force17
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force18
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force19
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force20
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force21
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force22
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force23
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force24
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force25
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force26
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force27
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force28
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force29
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+    force30
+    {
+        type            kqRWallFunction;
+        value           nonuniform 0();
+    }
+}
+
+
+// ************************************************************************* //

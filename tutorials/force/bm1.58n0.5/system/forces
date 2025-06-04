@@ -1,0 +1,382 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+forces1
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.06;
+    patches         (force1);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces2
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force2);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces3
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force3);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces4
+{
+    type            forces;
+    libs            ("libforces.so");
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    log             false;
+
+    patches         (force4);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces5
+{
+    type            forces;
+    libs            ("libforces.so");
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    log             false;
+
+    patches         (force5);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces6
+{
+    type            forces;
+    libs            ("libforces.so");
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    log             false;
+
+    patches         (force6);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces7
+{
+    type            forces;
+    libs            ("libforces.so");
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    log             false;
+
+    patches         (force7);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces8
+{
+    type            forces;
+    libs            ("libforces.so");
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    log             false;
+
+    patches         (force8);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces9
+{
+    type            forces;
+    libs            ("libforces.so");
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    log             false;
+
+    patches         (force9);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces10
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force10);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces11
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force11);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces12
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force12);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces13
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force13);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces14
+{
+    type            forces;
+    libs            ("libforces.so");
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    log             false;
+
+    patches         (force14);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces15
+{
+    type            forces;
+    libs            ("libforces.so");
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    log             false;
+
+    patches         (force15);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces16
+{
+    type            forces;
+    libs            ("libforces.so");
+
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force16);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces17
+{
+    type            forces;
+    libs            ("libforces.so");
+
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force17);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces18
+{
+    type            forces;
+    libs            ("libforces.so");
+
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force18);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces19
+{
+    type            forces;
+    libs            ("libforces.so");
+
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force19);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces20
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force20);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces21
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force21);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces22
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force22);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces23
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force23);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces24
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force24);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces25
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force25);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces26
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force26);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces27
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force27);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces28
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force28);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces29
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force29);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+forces30
+{
+    type            forces;
+    libs            ("libforces.so");
+    log             false;
+    writeControl    adjustableRunTime;
+    writeInterval   0.006;
+    patches         (force30);
+    rho             rhoInf;
+    rhoInf          1000;
+    CofR            (0 0 0);
+}
+
+
+// ************************************************************************* //
