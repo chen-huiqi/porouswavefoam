@@ -1,0 +1,126 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       regIOobject;
+    location    "constant/polyMesh";
+    object      faceZones;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+15
+(
+overtopping8
+{
+    type faceZone;
+faceLabels      List<label> 3(471889 471890 471891);
+flipMap         List<bool> 3{1};
+}
+
+overtopping6
+{
+    type faceZone;
+faceLabels      List<label> 3(471884 471885 471886);
+flipMap         List<bool> 3{1};
+}
+
+overtopping5
+{
+    type faceZone;
+faceLabels      List<label> 2(471881 471883);
+flipMap         List<bool> 2{1};
+}
+
+overtopping7
+{
+    type faceZone;
+faceLabels      List<label> 2(471887 471888);
+flipMap         List<bool> 2{1};
+}
+
+overtopping1
+{
+    type faceZone;
+faceLabels      List<label> 3(471872 471873 471874);
+flipMap         List<bool> 3{1};
+}
+
+overtopping3
+{
+    type faceZone;
+faceLabels      List<label> 3(471877 471878 471879);
+flipMap         List<bool> 3{1};
+}
+
+overtopping9
+{
+    type faceZone;
+faceLabels      List<label> 2(471892 471894);
+flipMap         List<bool> 2{1};
+}
+
+overtopping13
+{
+    type faceZone;
+faceLabels      List<label> 3(471901 471902 471903);
+flipMap         List<bool> 3{1};
+}
+
+overtopping10
+{
+    type faceZone;
+faceLabels      List<label> 3(471893 471895 471896);
+flipMap         List<bool> 3{1};
+}
+
+overtopping14
+{
+    type faceZone;
+faceLabels      List<label> 2(471904 471906);
+flipMap         List<bool> 2{1};
+}
+
+overtopping2
+{
+    type faceZone;
+faceLabels      List<label> 2(471875 471876);
+flipMap         List<bool> 2{1};
+}
+
+overtopping4
+{
+    type faceZone;
+faceLabels      List<label> 2(471880 471882);
+flipMap         List<bool> 2{1};
+}
+
+overtopping11
+{
+    type faceZone;
+faceLabels      List<label> 2(471897 471898);
+flipMap         List<bool> 2{1};
+}
+
+overtopping12
+{
+    type faceZone;
+faceLabels      List<label> 2(471899 471900);
+flipMap         List<bool> 2{1};
+}
+
+overtopping0
+{
+    type faceZone;
+faceLabels      List<label> 2(235983 471871);
+flipMap         List<bool> 2(0 1);
+}
+)
+
+// ************************************************************************* //
