@@ -1,0 +1,185 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      topoSetDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+actions
+(
+    {
+        name    overtopping0;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+            box    (0.01 1.38 -0.01) (0.401 1.42 1.01);
+        }
+
+    }
+    {
+        name    overtopping1;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+            box     (0.4  1.38  -0.01) (0.8 1.42 1.01);
+        }
+        
+    }
+    {
+        name    overtopping2;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+            box     (0.75  1.38  -0.01) (1.2 1.42 1.01);
+        }
+        
+    }
+    {
+        name    overtopping3;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+            box     (1.2  1.38  -0.01) (1.6 1.42 1.01);
+        }
+        
+    }
+    {
+        name    overtopping4;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+           box     (1.55  1.38  -0.01) (2 1.42 1.01);
+        }
+        
+    }
+   {
+        name    overtopping5;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+           box     (2  1.38  -0.01) (2.45 1.42 1.01);
+        }
+        
+    }
+  {
+        name    overtopping6;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+           box     (2.4  1.38  -0.01) (2.8 1.42 1.01);
+        }
+        
+    }
+  {
+        name    overtopping7;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+           box     (2.75  1.38  -0.01) (3.2 1.42 1.01);
+        }
+        
+    }
+  {
+        name    overtopping8;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+           box     (3.2  1.38  -0.01) (3.6 1.42 1.01);
+        }
+        
+    }
+  {
+        name    overtopping9;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+           box     (3.55  1.38  -0.01) (4 1.42 1.01);
+        }
+        
+    }
+  {
+        name    overtopping10;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+           box     (4  1.38  -0.01) (4.45 1.42 1.01);
+        }
+        
+    }
+ {
+        name    overtopping11;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+           box     (4.4  1.38  -0.01) (4.8 1.42 1.01);
+        }
+        
+    }
+ {
+        name    overtopping12;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+           box     (4.75  1.38  -0.01) (5.2 1.42 1.01);
+        }
+        
+    }
+ {
+        name    overtopping13;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+           box     (5.2  1.38  -0.01) (5.6 1.42 1.01);
+        }
+        
+    }
+{
+        name    overtopping14;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+           box     (5.55  1.38  -0.01) (6 1.42 1.01);
+        }
+        
+    }
+);
+// *************************************************************************
