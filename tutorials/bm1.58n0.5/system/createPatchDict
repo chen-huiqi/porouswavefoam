@@ -1,0 +1,372 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      createPatchDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// This application/dictionary controls:
+// - optional: create new patches from boundary faces (either given as
+//   a set of patches or as a faceSet)
+// - always: order faces on coupled patches such that they are opposite. This
+//   is done for all coupled faces, not just for any patches created.
+// - optional: synchronise points on coupled patches.
+
+// 1. Create cyclic:
+// - specify where the faces should come from
+// - specify the type of cyclic. If a rotational specify the rotationAxis
+//   and centre to make matching easier
+// - always create both halves in one invocation with correct 'neighbourPatch'
+//   setting.
+// - optionally pointSync true to guarantee points to line up.
+
+// 2. Correct incorrect cyclic:
+// This will usually fail upon loading:
+//  "face 0 area does not match neighbour 2 by 0.0100005%"
+//  " -- possible face ordering problem."
+// - in polyMesh/boundary file:
+//      - loosen matchTolerance of all cyclics to get case to load
+//      - or change patch type from 'cyclic' to 'patch'
+//        and regenerate cyclic as above
+
+
+// Do a synchronisation of coupled points after creation of any patches.
+// Note: this does not work with points that are on multiple coupled patches
+//       with transformations (i.e. cyclics).
+pointSync false;
+
+// Patches to create.
+patches
+(
+    {
+        // Name of new patch
+        name force1;
+
+        // Type of new patch
+        patchInfo
+        {
+            type       wall;
+        }
+
+        // How to construct: either from 'patches' or 'set'
+        constructFrom set;
+
+        // If constructFrom = set : name of faceSet
+        set forceFace1;
+    }
+   {
+        name force2;
+        patchInfo
+        {
+            type       wall;
+        }
+
+        constructFrom set;
+        set forceFace2;
+    }
+    {
+        name force3;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace3;
+    }
+    {
+        name force4;
+        patchInfo
+        {
+            type       wall;
+        }
+
+        constructFrom set;
+        set forceFace4;
+    }
+    {
+        name force5;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace5;
+    }
+    {
+        name force6;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace6;
+    }
+    {
+        name force7;
+        patchInfo
+        {
+            type       wall;
+        }
+
+        constructFrom set;
+        set forceFace7;
+    }
+    {
+        name force8;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace8;
+    }
+    {
+        name force9;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace9;
+    }
+    {
+        name force10;
+        patchInfo
+        {
+            type        wall; 
+        }
+
+        constructFrom set;
+        set forceFace10;
+    }
+ //new
+    {
+        // Name of new patch
+        name force11;
+
+        // Type of new patch
+        patchInfo
+        {
+            type       wall;
+        }
+
+        // How to construct: either from 'patches' or 'set'
+        constructFrom set;
+
+        // If constructFrom = set : name of faceSet
+        set forceFace11;
+    }
+   {
+        name force12;
+        patchInfo
+        {
+            type       wall;
+        }
+
+        constructFrom set;
+        set forceFace12;
+    }
+    {
+        name force13;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace13;
+    }
+    {
+        name force14;
+        patchInfo
+        {
+            type       wall;
+        }
+
+        constructFrom set;
+        set forceFace14;
+    }
+    {
+        name force15;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace15;
+    }
+    {
+        name force16;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace16;
+    }
+    {
+        name force17;
+        patchInfo
+        {
+            type       wall;
+        }
+
+        constructFrom set;
+        set forceFace17;
+    }
+    {
+        name force18;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace18;
+    }
+    {
+        name force19;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace19;
+    }
+    {
+        name force20;
+        patchInfo
+        {
+            type        wall; 
+        }
+
+        constructFrom set;
+        set forceFace20;
+    }
+   {
+        // Name of new patch
+        name force21;
+
+        // Type of new patch
+        patchInfo
+        {
+            type       wall;
+        }
+
+        // How to construct: either from 'patches' or 'set'
+        constructFrom set;
+
+        // If constructFrom = set : name of faceSet
+        set forceFace21;
+    }
+   {
+        name force22;
+        patchInfo
+        {
+            type       wall;
+        }
+
+        constructFrom set;
+        set forceFace22;
+    }
+    {
+        name force23;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace23;
+    }
+    {
+        name force24;
+        patchInfo
+        {
+            type       wall;
+        }
+
+        constructFrom set;
+        set forceFace24;
+    }
+    {
+        name force25;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace25;
+    }
+    {
+        name force26;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace26;
+    }
+    {
+        name force27;
+        patchInfo
+        {
+            type       wall;
+        }
+
+        constructFrom set;
+        set forceFace27;
+    }
+    {
+        name force28;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace28;
+    }
+    {
+        name force29;
+        patchInfo
+        {
+            type        wall;
+        }
+
+        constructFrom set;
+        set forceFace29;
+    }
+    {
+        name force30;
+        patchInfo
+        {
+            type        wall; 
+        }
+
+        constructFrom set;
+        set forceFace30;
+    }
+);
+
+// ************************************************************************* //
