@@ -1,0 +1,176 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    location    "0";
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+
+internalField   uniform (0 0 0);
+
+boundaryField
+{
+    inlet
+    {
+        type            waveVelocity;
+        refValue        uniform ( 0 0 0 );
+        refGradient     uniform ( 0 0 0 );
+        valueFraction   uniform 1;
+        value           uniform (0 0 0);
+    }
+    outlet
+    {
+        type            waveVelocity;
+        refValue        uniform ( 0 0 0 );
+        refGradient     uniform ( 0 0 0 );
+        valueFraction   uniform 1;
+        value           uniform (0 0 0);
+    }
+    bottom
+    {
+        type            noSlip;
+    }
+    atmosphere
+    {
+        type            noSlip;
+    }
+    defaultFaces
+    {
+        type            empty;
+    }
+    force1
+    {
+        type            noSlip;
+    }
+    force2
+    {
+        type            noSlip;
+    }
+    force3
+    {
+        type            noSlip;
+    }
+    force4
+    {
+        type            noSlip;
+    }
+    force5
+    {
+        type            noSlip;
+    }
+    force6
+    {
+        type            noSlip;
+    }
+    force7
+    {
+        type            noSlip;
+    }
+    force8
+    {
+        type            noSlip;
+    }
+    force9
+    {
+        type            noSlip;
+    }
+    force10
+    {
+        type            noSlip;
+    }
+    force11
+    {
+        type            noSlip;
+    }
+    force12
+    {
+        type            noSlip;
+    }
+    force13
+    {
+        type            noSlip;
+    }
+    force14
+    {
+        type            noSlip;
+    }
+    force15
+    {
+        type            noSlip;
+    }
+    force16
+    {
+        type            noSlip;
+    }
+    force17
+    {
+        type            noSlip;
+    }
+    force18
+    {
+        type            noSlip;
+    }
+    force19
+    {
+        type            noSlip;
+    }
+    force20
+    {
+        type            noSlip;
+    }
+    force21
+    {
+        type            noSlip;
+    }
+    force22
+    {
+        type            noSlip;
+    }
+    force23
+    {
+        type            noSlip;
+    }
+    force24
+    {
+        type            noSlip;
+    }
+    force25
+    {
+        type            noSlip;
+    }
+    force26
+    {
+        type            noSlip;
+    }
+    force27
+    {
+        type            noSlip;
+    }
+    force28
+    {
+        type            noSlip;
+    }
+    force29
+    {
+        type            noSlip;
+    }
+    force30
+    {
+        type            noSlip;
+    }
+}
+
+
+// ************************************************************************* //
