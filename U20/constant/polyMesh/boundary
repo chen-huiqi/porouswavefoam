@@ -1,0 +1,265 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+35
+(
+    inlet
+    {
+        type            patch;
+        nFaces          170;
+        startFace       241881;
+    }
+    outlet
+    {
+        type            patch;
+        nFaces          184;
+        startFace       242051;
+    }
+    bottom
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          730;
+        startFace       242235;
+    }
+    atmosphere
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          551;
+        startFace       242965;
+    }
+    defaultFaces
+    {
+        type            empty;
+        inGroups        1(empty);
+        nFaces          242386;
+        startFace       243516;
+    }
+    force1
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485902;
+    }
+    force2
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485903;
+    }
+    force3
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485904;
+    }
+    force4
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485905;
+    }
+    force5
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       485906;
+    }
+    force6
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485908;
+    }
+    force7
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485909;
+    }
+    force8
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485910;
+    }
+    force9
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485911;
+    }
+    force10
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       485912;
+    }
+    force11
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485914;
+    }
+    force12
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485915;
+    }
+    force13
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485916;
+    }
+    force14
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485917;
+    }
+    force15
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       485918;
+    }
+    force16
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485920;
+    }
+    force17
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485921;
+    }
+    force18
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485922;
+    }
+    force19
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485923;
+    }
+    force20
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       485924;
+    }
+    force21
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485926;
+    }
+    force22
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485927;
+    }
+    force23
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485928;
+    }
+    force24
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485929;
+    }
+    force25
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       485930;
+    }
+    force26
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485932;
+    }
+    force27
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485933;
+    }
+    force28
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485934;
+    }
+    force29
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       485935;
+    }
+    force30
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       485936;
+    }
+)
+
+// ************************************************************************* //

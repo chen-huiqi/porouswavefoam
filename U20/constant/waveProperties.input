@@ -1,0 +1,90 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.5                                   |
+|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      environmentalProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+seaLevel	0.00;
+wind    (20 0 0);
+// A list of the relaxation zones in the simulation. The parameters are given
+// in <name>Coeffs below.
+relaxationNames (inlet outlet);
+
+initializationName inlet;
+
+inletCoeffs
+{
+    // Wave type to be used at boundary "inlet" and in relaxation zone "inlet"
+    waveType    stokesFirst;  
+    
+    // Ramp time of 2 s
+    Tsoft       2;
+
+    // Water depth at the boundary and in the relaxation zone
+    depth       8;
+
+    // Wave period
+    period      6.5;
+
+    // Phase shift in the wave
+    phi         0.000000;
+
+    // Wave number vector, k. 
+    direction  (1.0 0.0 0.0);
+
+    // Wave height
+    height      3.8;
+    
+    // Specifications on the relaxation zone shape and relaxation scheme
+    relaxationZone
+    {
+        relaxationScheme Spatial;
+        relaxationShape  Rectangular;
+        beachType        Empty;
+    
+        relaxType   INLET;
+        startX              ( -160 -8 -1 );
+        endX                ( -100 27 1 );
+        orientation      (1.0 0.0 0.0);
+    }
+};
+
+outletCoeffs
+{
+    waveType    potentialCurrent;
+    U           (0 0 0);
+    Tsoft       2;
+
+    relaxationZone
+    {
+        relaxationScheme Spatial;
+        relaxationShape  Rectangular;
+        beachType        Empty;    
+
+        relaxType   OUTLET;
+        startX              ( 25 -8 -1 );
+        endX                ( 50 27 1 );
+        orientation      (1.0 0.0 0.0);
+    }
+};
+
+porosityModel       jensenJacobsenChristensen2014;
+
+
+
+
+
+
+
+
+// ************************************************************************* //
