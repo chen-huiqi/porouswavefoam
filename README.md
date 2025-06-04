@@ -7,9 +7,9 @@ subsetMesh obstacle1  -overwrite -patch bottom
 refineMesh -overwrite
 setsToZones -noFlipMap
 createPatch -overwrite
-//setWaveParameters 
+#setWaveParameters 
 setFields
-//setWaveField 
+#setWaveField 
 waveGaugesNProbes
 
 decomposePar
